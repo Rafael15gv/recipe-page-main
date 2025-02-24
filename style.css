@@ -1,0 +1,173 @@
+/* ================================ */
+/*          Global Style            */
+/* ================================ */
+:root {
+  /* =====color===== */
+  --White-color: hsl(0, 0%, 100%);
+  --Stone-100-color: hsl(30, 54%, 90%);
+  --Stone-150-color: hsl(30, 18%, 87%);
+  --Stone-600-color: hsl(30, 10%, 34%);
+  --Stone-900-color: hsl(24, 5%, 18%);
+  --rown-800-color: hsl(14, 45%, 36%);
+  --Rose-800-color: hsl(332, 51%, 32%);
+  --Rose-50-color: hsl(330, 100%, 98%);
+
+  /* =====Font===== */
+  --Main-font: "Young";
+  --secundari-font: "Outfit";
+}
+
+@font-face {
+  font-family: "Young";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* ================================ */
+/*          Reset & Global          */
+/* ================================ */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Stone-100-color);
+}
+
+.container {
+  margin-top: 500px;
+  width: 90%;
+  max-width: 680px;
+  padding: 20px;
+  background-color: var(--White-color);
+  border-radius: 20px;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+/* ================================ */
+/*       General Style              */
+/* ================================ */
+
+h1,
+h2,
+h3 {
+  font-family: "Young";
+  color: var(--rown-800-color);
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--Stone-900-color);
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 15px 0px;
+}
+
+h3 {
+  margin: 10px 0px;
+}
+
+h3,
+strong {
+  color: var(--Rose-800-color);
+  font-weight: 700;
+}
+
+p {
+  margin: 25px 0px;
+  color: var(--Stone-900-color);
+}
+
+ul,
+ol {
+  margin-left: 30px;
+  line-height: 30px;
+  color: var(--Stone-900-color);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul li::marker {
+  font-size: 10px;
+  color: var(--Rose-800-color);
+}
+
+
+ol li::marker {
+  color: var(--Rose-800-color);
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* ================================ */
+/*    specific section Style        */
+/* ================================ */
+div > img {
+  width: 100%;
+  padding: 30px;
+  background-size: 50px;
+  border-radius: 40px;
+}
+
+.time {
+  width: 100%;
+  padding: 10px 30px;
+  /* padding: 10px; */
+  background-color: var(--Rose-50-color);
+  border-radius: 10px;
+}
+
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* background-color: red; */
+}
+
+.tabla p {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+hr {
+  width: 100%;
+  height: 2.1px;
+  margin: 15px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Stone-100-color);
+}
+
+/* ================================ */
+/*          Movil Layout            */
+/* ================================ */
+/* @media (max-width: 480px){
+  body {
+    background-color: red;
+  }
+  
+
+} */
