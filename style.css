@@ -15,6 +15,7 @@
   /* =====Font===== */
   --Main-font: "Young";
   --secundari-font: "Outfit";
+  color: var(--Stone-900-color);
 }
 
 @font-face {
@@ -45,15 +46,12 @@ body {
 }
 
 .container {
-  margin-top: 500px;
+  /* margin-top: 500px; */
   width: 90%;
   max-width: 680px;
   padding: 20px;
   background-color: var(--White-color);
   border-radius: 20px;
-
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 /* ================================ */
@@ -109,7 +107,6 @@ ul li::marker {
   color: var(--Rose-800-color);
 }
 
-
 ol li::marker {
   color: var(--Rose-800-color);
   font-weight: 600;
@@ -129,28 +126,21 @@ div > img {
 .time {
   width: 100%;
   padding: 10px 30px;
-  /* padding: 10px; */
   background-color: var(--Rose-50-color);
   border-radius: 10px;
 }
 
-
 .tabla {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  /* background-color: red; */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tabla p {
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 45%;
+  margin: 0px 0px;
+  padding-left: 30px;
 }
-
 
 hr {
   width: 100%;
