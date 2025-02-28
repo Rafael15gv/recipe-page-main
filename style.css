@@ -156,10 +156,6 @@ hr {
 /*          Movil Layout            */
 /* ================================ */
 @media (max-width: 480px) {
-  body {
-    background-color: red;
-  }
-
   .container {
     margin: 0px;
     width: 100%;
